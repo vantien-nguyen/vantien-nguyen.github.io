@@ -1,7 +1,7 @@
 # Software Engineer
 
 ### Education
-Master
+Master - EPITA
 
 ### Work Experience
 Software Engineer @ Sqwad
