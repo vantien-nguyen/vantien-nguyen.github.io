@@ -36,7 +36,3 @@ I'm a dedicated software engineer who loves [specific technologies or areas of i
 ## Contact Me
 
 Feel free to reach out to me through [email@example.com](mailto:email@example.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/yourusername/) and [Twitter](https://twitter.com/yourusername).
-
-## Acknowledgments
-
-Special thanks to [anyone you want to acknowledge] for their support and collaboration.
