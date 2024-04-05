@@ -154,17 +154,3 @@
         font-size: 1.5rem;
     }
 }
-
-
-@media screen and (max-width: 767px) {
-    .nav__menu {
-        position: fixed;
-        top: var(--header-height);
-        right: -100%;
-        width: 80%;
-        height: 100%;
-        padding: 2rem;
-        background-color: var(--second-color);
-        transition: .5s;
-    }
-}

@@ -117,6 +117,19 @@ img {
     font-weight: var(--font-semi);
 }
 
+@media screen and (max-width: 767px) {
+    .nav__menu {
+        position: fixed;
+        top: var(--header-height);
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: var(--second-color);
+        transition: .5s;
+    }
+}
+
 .nav__item {
     margin-bottom: var(--mb-4);
 }
