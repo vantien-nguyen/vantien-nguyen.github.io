@@ -38,5 +38,3 @@ ehthumbs.db
 .yarn/build-state.yml
 .pnp.*
 .yarn/install-state.gz
-
-node_modules
