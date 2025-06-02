@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.672e3f49.css",
+    "main.js": "/static/js/main.3872973a.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/Van-Tien-NGUYEN_CV.pdf": "/static/media/Van-Tien-NGUYEN_CV.8622a91f8f38f474fadc.pdf",
+    "static/media/profile.jpg": "/static/media/profile.985cb0b975d5f7023a11.jpg",
+    "static/media/adress.png": "/static/media/adress.b3f6a5ccb617cb029568.png",
+    "static/media/github.svg": "/static/media/github.5531be85d7a8d6f333e5c7136944a022.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.c5f7c80a4f858f8356d49cb775eb88ae.svg",
+    "static/media/job-profile.svg": "/static/media/job-profile.7f9dbea26e695fa5bd1f787a0427b840.svg",
+    "index.html": "/index.html",
+    "main.672e3f49.css.map": "/static/css/main.672e3f49.css.map",
+    "main.3872973a.js.map": "/static/js/main.3872973a.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.672e3f49.css",
+    "static/js/main.3872973a.js"
+  ]
+}
