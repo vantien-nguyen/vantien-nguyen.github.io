@@ -1,8 +1,10 @@
 import { Education } from "../types";
+import EPITA_LOGO from "../assets/imgs/epita-logo.png";
+import HUST_LOGO from "../assets/imgs/hust-logo.png";
 
 export const experiences = [
   {
-    role: "Software Engineer",
+    role: "Full-stackSoftware Engineer",
     company: "Freelancer",
     startDate: "2024-12-01",
     endDate: "Present",
@@ -29,7 +31,7 @@ export const experiences = [
   },
   {
     role: "Software Engineer",
-    company: "Samsung Vietnam R&D Center",
+    company: "Samsung Vietnam Mobile R&D Center",
     startDate: "2017-08-01",
     endDate: "2020-01-31",
     description: "Collaborated with the Korean team to develop web application systems and software products using tools such as Github, React, Python, Django, and Docker",
@@ -78,6 +80,8 @@ export const education: Education[] = [
   {
     degree: "Master of Science in Artificial Intelligence System",
     institution: "EPITA, Paris, France",
+    institutionUrl: "https://www.epita.fr/",
+    logoUrl: EPITA_LOGO,
     startDate: "2020-09",
     endDate: "2022-03",
     description: "Specialized in AI, Machine Learning, Deep Learning, Reinforcement Learning, Computer Vision, Natural Language Processing, and Data Science in production.",
@@ -89,6 +93,8 @@ export const education: Education[] = [
   {
     degree: "Degree of Software Engineering",
     institution: "Hanoi University of Science and Technology, Vietnam",
+    institutionUrl: "https://www.hust.edu.vn/",
+    logoUrl: HUST_LOGO,
     startDate: "2012-09",
     endDate: "2017-07",
     description: "Specialized in Software Engineering with a strong foundation in algorithms, data structures, and software development methodologies. Completed various projects in web development and database systems.",
