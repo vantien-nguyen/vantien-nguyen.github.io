@@ -1,0 +1,36 @@
+{
+  "header": {
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About Me",
+    "downloadCv": "Download CV",
+    "description": "With a strong background in software development and a passion for building innovative solutions, I am committed to delivering high-quality results and contributing to the success of my team. I work autonomously and independently, taking full responsibility for my tasks while maintaining a proactive and solution-oriented mindset.",
+    "location": "Villejuif, Ille-de-France",
+    "job": "Software Engineer"
+  },
+  "experience": {
+    "title": "Experience"
+  },
+  "education": {
+    "title": "Academic Background",
+    "achievements": "Achievements"
+  },
+  "projects": {
+    "title": "Projects",
+    "viewCode": "View Code",
+    "frontend": "Frontend",
+    "backend": "Backend"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "email": "Email"
+  },
+  "footer": {
+    "copyright": "© {{year}} Van Tien Nguyen. All rights reserved."
+  }
+}

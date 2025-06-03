@@ -1,0 +1,36 @@
+{
+  "header": {
+    "about": "À propos",
+    "experience": "Expérience",
+    "education": "Formation",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "downloadCv": "Télécharger le CV",
+    "description": "Fort d'une solide expérience en développement logiciel et passionné par la création de solutions innovantes, je m'engage à fournir des résultats de haute qualité et à contribuer activement à la réussite de mon équipe. Autonome et indépendant, j'assume pleinement mes responsabilités tout en adoptant une approche proactive et orientée solution.",
+    "location": "Villejuif, Île-de-France",
+    "job": "Ingénieur Logiciel"
+  },
+  "experience": {
+    "title": "Expérience"
+  },
+  "education": {
+    "title": "Parcours académique",
+    "achievements": "Réalisations"
+  },
+  "projects": {
+    "title": "Projets",
+    "viewCode": "Voir le code",
+    "frontend": "Frontend",
+    "backend": "Backend"
+  },
+  "contact": {
+    "title": "Me contacter",
+    "email": "Email"
+  },
+  "footer": {
+    "copyright": "© {{year}} Van Tien Nguyen. Tous droits réservés."
+  }
+}

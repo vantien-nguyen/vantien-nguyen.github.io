@@ -1,42 +1,72 @@
 import React from "react";
-import { calculateDuration, formatDate, getIcon } from "../utils";
-import { Technology } from "../types";
+import { useTranslation } from "react-i18next";
+import {
+  calculateDuration,
+  formatDate,
+  getIcon,
+  getLocalizedContent,
+} from "../utils";
 import { experiences } from "../data/portfolioData";
 
-export interface ExperienceItem {
-  role: string;
-  company: string;
-  startDate: string;
-  endDate: string;
-  description: string;
-  technologies: Technology[];
-}
-
 const Experience: React.FC = () => {
+  const { i18n } = useTranslation();
+  const currentLanguage = i18n.language.split("-")[0]; // Gets 'en' or 'fr' from 'en-US' or 'fr-FR'
+
   return (
     <section id="experience" className="max-w-4xl mx-auto">
-      <h2 className="text-4xl font-semibold mb-8 text-center">Experience</h2>
+      <h2 className="text-4xl font-semibold mb-8 text-center">
+        {currentLanguage === "fr" ? "Expérience" : "Experience"}
+      </h2>
       <div className="space-y-8">
-        {experiences.map((item) => {
-          const { role, company, startDate, endDate, description, technologies } = item;
+        {experiences.map((item, index) => {
+          const {
+            role,
+            company,
+            startDate,
+            endDate,
+            description,
+            technologies,
+          } = item;
+          const displayRole = getLocalizedContent(currentLanguage, role);
+          const displayDescription = getLocalizedContent(
+            currentLanguage,
+            description,
+          );
+
           return (
-            <div key={`${company}-${role}`} className="p-6 rounded-lg shadow border border-gray-300 bg-white">
+            <div
+              key={`${company}-${index}`}
+              className="p-6 rounded-lg shadow border border-gray-300 bg-white"
+            >
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900">{role}</h3>
+                  <h3 className="text-xl font-bold text-gray-900">
+                    {displayRole}
+                  </h3>
                   <p className="italic text-indigo-600">{company}</p>
                   <div className="flex items-center gap-2 text-sm text-gray-500">
-                    <span>{formatDate(startDate)} - {formatDate(endDate)}</span>
+                    <span>
+                      {formatDate(startDate, currentLanguage)} -{" "}
+                      {formatDate(endDate, currentLanguage)}
+                    </span>
                     <span className="text-gray-500">•</span>
-                    <span className="text-gray-600">{calculateDuration(startDate, endDate)}</span>
+                    <span className="text-gray-600">
+                      {calculateDuration(startDate, endDate, currentLanguage)}
+                    </span>
                   </div>
                 </div>
               </div>
-              <p className="text-gray-700 mt-2">{description}</p>
+              <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                {displayDescription.map((item, index) => (
+                  <li key={index} className="ml-4">
+                    {item}
+                  </li>
+                ))}
+              </ul>
               <div className="flex flex-wrap gap-3 mt-4">
                 {technologies.map((tech, i) => (
                   <div key={i} title={tech.name}>
-                    {getIcon(tech)}
+                    {getIcon(tech as any)}
                   </div>
                 ))}
               </div>
