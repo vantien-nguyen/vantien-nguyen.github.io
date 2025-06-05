@@ -9,7 +9,7 @@ export const experiences: ExperienceItem[] = [
       fr: "Ingénieur Logiciel Full-Stack",
     },
     company: "Freelancer",
-    startDate: "2024-12-01",
+    startDate: "2024-11-01",
     endDate: "Present",
     description: {
       en: [
@@ -175,7 +175,7 @@ export const education: Education[] = [
   {
     degree: {
       en: "Degree of Software Engineering",
-      fr: "Diplôme d'Ingénieur en Génie Logiciel",
+      fr: "Licence en Génie Logiciel",
     },
     institution: {
       en: "Hanoi University of Science and Technology, Vietnam",

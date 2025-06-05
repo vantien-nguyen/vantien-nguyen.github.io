@@ -9,13 +9,13 @@ const Academic: React.FC = () => {
   const currentLanguage = i18n.language.split("-")[0];
 
   return (
-    <section id="education" className="max-w-4xl mx-auto p-4">
-      <h2 className="text-4xl font-semibold mb-8 text-center text-gray-900">
+    <section id="education" className="max-w-4xl mx-auto">
+      <h2 className="text-2xl md:text-3xl font-semibold mb-6 md:mb-8 text-center text-gray-900">
         {currentLanguage === "fr"
           ? "Parcours académique"
           : "Academic Background"}
       </h2>
-      <div className="space-y-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {education.map((edu: Education, index: number) => {
           // Safely handle potentially undefined values
           const degree = edu.degree || { en: "", fr: "" };
@@ -31,10 +31,10 @@ const Academic: React.FC = () => {
           return (
             <div
               key={index}
-              className="p-6 rounded-lg shadow border border-gray-300 bg-white"
+              className="h-full p-4 rounded-lg shadow border border-gray-300 bg-white"
             >
               <div className="space-y-4">
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-2">
                   {/* Logo on the left */}
                   <div className="flex-shrink-0 pt-4">
                     <a
@@ -55,18 +55,18 @@ const Academic: React.FC = () => {
 
                   {/* Degree and institution info */}
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900">
+                    <h3 className="text-base md:text-base font-bold text-gray-900">
                       {displayDegree}
                     </h3>
                     <a
                       href={edu.institutionUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-600 hover:underline inline-block mt-1"
+                      className="text-blue-600 hover:underline inline-block mt-1 text-sm md:text-base"
                     >
                       {displayInstitution}
                     </a>
-                    <p className="text-gray-600 text-sm mt-0.5">
+                    <p className="text-gray-600 text-sm md:text-base mt-0.5">
                       {formatDate(edu.startDate, currentLanguage)} -{" "}
                       {formatDate(edu.endDate, currentLanguage)}
                     </p>

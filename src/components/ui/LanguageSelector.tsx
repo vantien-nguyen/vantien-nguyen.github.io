@@ -65,9 +65,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
     >
       <button
         onClick={toggleDropdown}
-        className={`flex items-center justify-center ${
-          variant === "desktop" ? "w-10" : "w-10 h-10"
-        } hover:bg-gray-100 transition-colors focus:outline-none focus:ring-0`}
+        className={`flex items-center justify-center hover:bg-gray-100 transition-colors focus:outline-none focus:ring-0`}
         aria-label={t("changeLanguage")}
         aria-expanded={isOpen}
       >
@@ -79,7 +77,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
               width: "1.5rem",
               height: "1.5rem",
             }}
-            className="overflow-hidden shadow-sm"
+            className="overflow-hidden"
             aria-label={currentLanguage.label}
           />
         </div>

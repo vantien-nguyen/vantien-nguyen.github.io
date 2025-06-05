@@ -10,10 +10,10 @@ const Projects: React.FC = () => {
 
   return (
     <section id="projects" className="max-w-4xl mx-auto p-4">
-      <h2 className="text-4xl font-semibold mb-8 text-center text-gray-900">
+      <h2 className="text-2xl md:text-3xl font-semibold mb-6 md:mb-8 text-center text-gray-900">
         {currentLanguage === "fr" ? "Projets" : "Projects"}
       </h2>
-      <div className="grid gap-8">
+      <div className="grid gap-6 md:gap-8">
         {projects.map((project: Project, index: number) => {
           const displayTitle = getLocalizedContent(
             currentLanguage,
@@ -27,13 +27,13 @@ const Projects: React.FC = () => {
           return (
             <div
               key={`project-${index}`}
-              className="p-6 rounded-lg shadow border border-gray-300 bg-white"
+              className="p-4 md:p-6 rounded-lg shadow border border-gray-300 bg-white"
             >
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
+              <h3 className="text-base md:text-xl font-bold text-gray-900 mb-2">
                 {displayTitle}
               </h3>
 
-              <ul className="list-disc list-inside text-gray-700 mt-2 mb-4 space-y-1">
+              <ul className="list-disc list-inside text-gray-700 mt-2 mb-4 space-y-1 text-sm md:text-base">
                 {displayDescription.map((item, index) => (
                   <li key={index} className="ml-4">
                     {item}
@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
                 ))}
               </ul>
 
-              <div className="flex flex-wrap gap-3 mb-4">
+              <div className="flex flex-wrap gap-2 md:gap-3 mb-4">
                 {project.technologies.map((tech, i) => (
                   <div
                     key={i}
@@ -54,13 +54,13 @@ const Projects: React.FC = () => {
               </div>
 
               {project.sourceCode && (
-                <div className="flex gap-4">
+                <div className="flex gap-2 md:gap-4">
                   {typeof project.sourceCode === "string" ? (
                     <a
                       href={project.sourceCode}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-blue-600 hover:underline"
+                      className="flex items-center gap-2 text-blue-600 hover:underline text-sm md:text-base"
                     >
                       <span>
                         {currentLanguage === "fr"
@@ -89,7 +89,7 @@ const Projects: React.FC = () => {
                           href={project.sourceCode.backend}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 text-blue-600 hover:underline"
+                          className="flex items-center gap-2 text-blue-600 hover:underline text-sm md:text-base"
                         >
                           <span>
                             {currentLanguage === "fr" ? "Backend" : "Backend"}
@@ -115,7 +115,7 @@ const Projects: React.FC = () => {
                           href={project.sourceCode.frontend}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 text-blue-600 hover:underline"
+                          className="flex items-center gap-2 text-blue-600 hover:underline text-sm md:text-base"
                         >
                           <span>
                             {currentLanguage === "fr" ? "Frontend" : "Frontend"}

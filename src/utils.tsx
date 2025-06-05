@@ -33,37 +33,39 @@ export const calculateDuration = (
 ): string => {
   const start = new Date(startDate);
   const end =
-    endDate.toLowerCase() === "present" ? new Date() : new Date(endDate);
+    endDate.toLowerCase?.() === "present" ? new Date() : new Date(endDate);
 
-  let months = (end.getFullYear() - start.getFullYear()) * 12;
-  months -= start.getMonth();
-  months += end.getMonth();
+  if (isNaN(start.getTime()) || isNaN(end.getTime()) || end < start) {
+    return language === "fr" ? "Date invalide" : "Invalid date";
+  }
 
-  const years = Math.floor(months / 12);
-  const remainingMonths = (months % 12) + 1;
+  let totalMonths = (end.getFullYear() - start.getFullYear()) * 12;
+  totalMonths += end.getMonth() - start.getMonth();
+
+  // Add 1 month if end day is on or after start day
+  if (end.getDate() >= start.getDate()) {
+    totalMonths += 1;
+  }
+
+  const years = Math.floor(totalMonths / 12);
+  const months = totalMonths % 12;
 
   if (language === "fr") {
     const yearsText = years > 0 ? `${years} an${years > 1 ? "s" : ""}` : "";
-    const monthsText = remainingMonths > 0 ? `${remainingMonths} mois` : "";
+    const monthsText = months > 0 ? `${months} mois` : "";
 
-    if (yearsText && monthsText) {
-      return `${yearsText} et ${monthsText}`;
-    }
+    if (yearsText && monthsText) return `${yearsText} et ${monthsText}`;
     return yearsText || monthsText || "Moins d'un mois";
   }
 
   // Default to English
   const yearsText = years > 0 ? `${years} year${years > 1 ? "s" : ""}` : "";
-  const monthsText =
-    remainingMonths > 0
-      ? `${remainingMonths} month${remainingMonths > 1 ? "s" : ""}`
-      : "";
+  const monthsText = months > 0 ? `${months} month${months > 1 ? "s" : ""}` : "";
 
-  if (yearsText && monthsText) {
-    return `${yearsText} and ${monthsText}`;
-  }
+  if (yearsText && monthsText) return `${yearsText} and ${monthsText}`;
   return yearsText || monthsText || "Less than a month";
 };
+
 
 export const formatDate = (
   dateString: string,
