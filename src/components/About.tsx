@@ -6,7 +6,7 @@ import AddressIcon from "../assets/icons/adress.png";
 import GithubIcon from "../assets/icons/github.svg";
 import LinkedinIcon from "../assets/icons/linkedin.svg";
 import JobIcon from "../assets/icons/job-profile.svg";
-import CVFile from "../assets/files/Van-Tien-NGUYEN_CV.pdf";
+import CVFile from "../assets/files/VanTien_NGUYEN_CV.pdf";
 
 const About: React.FC = () => {
   const { t } = useTranslation();
