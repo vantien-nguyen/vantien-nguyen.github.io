@@ -175,11 +175,11 @@ export const education: Education[] = [
   {
     degree: {
       en: "Degree of Software Engineering",
-      fr: "Licence en Génie Logiciel",
+      fr: "Diplôme d’ingénieur en génie logiciel",
     },
     institution: {
       en: "Hanoi University of Science and Technology, Vietnam",
-      fr: "Institut polytechnique de Hanoï, Vietnam",
+      fr: "École polytechnique de Hanoï, Vietnam",
     },
     institutionUrl: "https://www.hust.edu.vn/",
     logoUrl: HUST_LOGO,
