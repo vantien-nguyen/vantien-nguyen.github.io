@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/vantien-nguyen.github.io/static/css/main.672e3f49.css",
-    "main.js": "/vantien-nguyen.github.io/static/js/main.6e6ae577.js",
+    "main.js": "/vantien-nguyen.github.io/static/js/main.7f2bf34f.js",
     "static/js/453.e92cb00b.chunk.js": "/vantien-nguyen.github.io/static/js/453.e92cb00b.chunk.js",
-    "static/media/VanTien_NGUYEN_CV.pdf": "/vantien-nguyen.github.io/static/media/VanTien_NGUYEN_CV.aa88a5bb3092010ef32b.pdf",
+    "static/media/VanTien_NGUYEN_CV.pdf": "/vantien-nguyen.github.io/static/media/VanTien_NGUYEN_CV.555c7f869af9b1451d9a.pdf",
     "static/media/profile.png": "/vantien-nguyen.github.io/static/media/profile.34055dcf138321c9a2a7.png",
     "static/media/epita-logo.png": "/vantien-nguyen.github.io/static/media/epita-logo.f5a322f519acf43f7eef.png",
     "static/media/adress.png": "/vantien-nguyen.github.io/static/media/adress.b3f6a5ccb617cb029568.png",
@@ -13,11 +13,11 @@
     "static/media/job-profile.svg": "/vantien-nguyen.github.io/static/media/job-profile.7f9dbea26e695fa5bd1f787a0427b840.svg",
     "index.html": "/vantien-nguyen.github.io/index.html",
     "main.672e3f49.css.map": "/vantien-nguyen.github.io/static/css/main.672e3f49.css.map",
-    "main.6e6ae577.js.map": "/vantien-nguyen.github.io/static/js/main.6e6ae577.js.map",
+    "main.7f2bf34f.js.map": "/vantien-nguyen.github.io/static/js/main.7f2bf34f.js.map",
     "453.e92cb00b.chunk.js.map": "/vantien-nguyen.github.io/static/js/453.e92cb00b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.672e3f49.css",
-    "static/js/main.6e6ae577.js"
+    "static/js/main.7f2bf34f.js"
   ]
 }
