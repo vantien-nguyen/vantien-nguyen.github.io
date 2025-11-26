@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/vantien-nguyen.github.io/static/css/main.672e3f49.css",
-    "main.js": "/vantien-nguyen.github.io/static/js/main.43b9f7cb.js",
-    "static/js/453.e92cb00b.chunk.js": "/vantien-nguyen.github.io/static/js/453.e92cb00b.chunk.js",
-    "static/media/profile.png": "/vantien-nguyen.github.io/static/media/profile.34055dcf138321c9a2a7.png",
-    "static/media/epita-logo.png": "/vantien-nguyen.github.io/static/media/epita-logo.f5a322f519acf43f7eef.png",
-    "static/media/VanTien_NGUYEN_CV.pdf": "/vantien-nguyen.github.io/static/media/VanTien_NGUYEN_CV.04fb9660c461be6b4ed6.pdf",
-    "static/media/adress.png": "/vantien-nguyen.github.io/static/media/adress.b3f6a5ccb617cb029568.png",
-    "static/media/gmail.svg": "/vantien-nguyen.github.io/static/media/gmail.bccb34815dafa7bca0399b021f994e46.svg",
-    "static/media/github.svg": "/vantien-nguyen.github.io/static/media/github.5531be85d7a8d6f333e5c7136944a022.svg",
-    "static/media/linkedin.svg": "/vantien-nguyen.github.io/static/media/linkedin.c5f7c80a4f858f8356d49cb775eb88ae.svg",
-    "static/media/job-profile.svg": "/vantien-nguyen.github.io/static/media/job-profile.7f9dbea26e695fa5bd1f787a0427b840.svg",
-    "index.html": "/vantien-nguyen.github.io/index.html",
-    "main.672e3f49.css.map": "/vantien-nguyen.github.io/static/css/main.672e3f49.css.map",
-    "main.43b9f7cb.js.map": "/vantien-nguyen.github.io/static/js/main.43b9f7cb.js.map",
-    "453.e92cb00b.chunk.js.map": "/vantien-nguyen.github.io/static/js/453.e92cb00b.chunk.js.map"
+    "main.css": "/static/css/main.672e3f49.css",
+    "main.js": "/static/js/main.6c4a5a5a.js",
+    "static/js/453.e92cb00b.chunk.js": "/static/js/453.e92cb00b.chunk.js",
+    "static/media/profile.png": "/static/media/profile.34055dcf138321c9a2a7.png",
+    "static/media/epita-logo.png": "/static/media/epita-logo.f5a322f519acf43f7eef.png",
+    "static/media/VanTien_NGUYEN_CV.pdf": "/static/media/VanTien_NGUYEN_CV.04fb9660c461be6b4ed6.pdf",
+    "static/media/adress.png": "/static/media/adress.b3f6a5ccb617cb029568.png",
+    "static/media/gmail.svg": "/static/media/gmail.bccb34815dafa7bca0399b021f994e46.svg",
+    "static/media/github.svg": "/static/media/github.5531be85d7a8d6f333e5c7136944a022.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.c5f7c80a4f858f8356d49cb775eb88ae.svg",
+    "static/media/job-profile.svg": "/static/media/job-profile.7f9dbea26e695fa5bd1f787a0427b840.svg",
+    "index.html": "/index.html",
+    "main.672e3f49.css.map": "/static/css/main.672e3f49.css.map",
+    "main.6c4a5a5a.js.map": "/static/js/main.6c4a5a5a.js.map",
+    "453.e92cb00b.chunk.js.map": "/static/js/453.e92cb00b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.672e3f49.css",
-    "static/js/main.43b9f7cb.js"
+    "static/js/main.6c4a5a5a.js"
   ]
 }
