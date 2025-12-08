@@ -22,8 +22,8 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const languages: Language[] = [
-    { code: "en", countryCode: "GB", label: "English" },
     { code: "fr", countryCode: "FR", label: "Français" },
+    { code: "en", countryCode: "GB", label: "English" },
   ];
 
   const currentLanguage =

@@ -7,9 +7,10 @@ import GithubIcon from "../assets/icons/github.svg";
 import LinkedinIcon from "../assets/icons/linkedin.svg";
 import JobIcon from "../assets/icons/job-profile.svg";
 import CVFile from "../assets/files/VanTien_NGUYEN_CV.pdf";
+import CVFileFr from "../assets/files/VanTien_NGUYEN_CV_fr.pdf";
 
 const About: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <section
       id="about"
@@ -41,7 +42,7 @@ const About: React.FC = () => {
             {t("contact.title")}
           </a>
           <button
-            onClick={() => window.open(CVFile, "_blank", "noopener,noreferrer")}
+            onClick={() => window.open(i18n.language === 'fr' ? CVFileFr : CVFile, "_blank", "noopener,noreferrer")}
             className="inline-flex items-center px-2 py-1 border border-blue-600 text-blue-600 hover:bg-blue-100 rounded transition-colors text-sm md:text-base"
           >
             {t("about.downloadCv")}
