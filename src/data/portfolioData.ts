@@ -9,16 +9,18 @@ export const experiences: ExperienceItem[] = [
       fr: "Ingénieur Logiciel Full-Stack",
     },
     company: "Freelancer",
-    startDate: "2024-11-01",
+    startDate: "2023-09-01",
     endDate: "Present",
     description: {
       en: [
         "Designed, programmed, deployed, and maintained a CRM web application.",
         "Extracted and processed advertising data from Google, TikTok, Meta, and YouTube to generate automated Excel reports for performance analysis.",
+        "Strengthening and acquiring skills through personal projects and new technologies."
       ],
       fr: [
         "Conçu, développé, déployé et maintenu une application web CRM.",
         "Extrait et traité des données publicitaires provenant de Google, TikTok, Meta et YouTube afin de générer des rapports Excel automatisés pour l'analyse des performances.",
+        "Renforcement et acquisition de comp´etences via projets personnels et nouvelles technologies."
       ],
     },
     technologies: [
