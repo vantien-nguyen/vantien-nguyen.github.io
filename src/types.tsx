@@ -18,9 +18,14 @@ import {
   SiStreamlit,
   SiSpacy,
   SiPytorch,
+  SiElasticsearch,
+  SiApachekafka,
   SiRedux,
   SiDocker,
   SiPandas,
+  SiOpencv,
+  SiTensorflow,
+  SiKeras,
 } from "react-icons/si";
 
 export const iconMap = {
@@ -39,9 +44,14 @@ export const iconMap = {
   SiStreamlit,
   SiSpacy,
   SiPytorch,
+  SiElasticsearch,
+  SiApachekafka,
   SiRedux,
   SiDocker,
   SiPandas,
+  SiOpencv,
+  SiTensorflow,
+  SiKeras,
   FaAws,
   FaGit,
 } as const;
@@ -67,6 +77,10 @@ export interface Project {
       }
     | string;
   technologies: Technology[];
+  liveDemo?: string | {
+    frontend?: string;
+    backend?: string;
+  };
 }
 
 export interface Education {
