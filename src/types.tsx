@@ -23,9 +23,9 @@ import {
   SiRedux,
   SiDocker,
   SiPandas,
-  SiOpencv,
   SiTensorflow,
   SiKeras,
+  SiHuggingface
 } from "react-icons/si";
 
 export const iconMap = {
@@ -49,11 +49,11 @@ export const iconMap = {
   SiRedux,
   SiDocker,
   SiPandas,
-  SiOpencv,
   SiTensorflow,
   SiKeras,
   FaAws,
   FaGit,
+  SiHuggingface
 } as const;
 
 export type Technology = {

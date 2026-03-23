@@ -98,38 +98,36 @@ export const experiences: ExperienceItem[] = [
 
 export const projects: Project[] = [
   {
-  title: {
-    en: "MedVision-XR",
-    fr: "MedVision-XR",
+    title: {
+      en: "MedVision-XR",
+      fr: "MedVision-XR",
+    },
+    description: {
+      en: [
+        "AI-powered chest X-ray classification for COVID-19, Normal, Viral Pneumonia, and Lung Opacity.",
+        "Implemented transfer learning using EfficientNetB0 with Grad-CAM visualization for model interpretability.",
+        "Added RAG (Retrieval-Augmented Generation) system for medical literature Q&A using PubMed Central data.",
+        "Deployed frontend as a Streamlit app and backend API separately on Heroku.",
+      ],
+      fr: [
+        "Classification d'images radiographiques pulmonaires assistée par IA pour COVID-19, Normal, Pneumonie virale et Opacité pulmonaire.",
+        "Utilisation du transfert learning avec EfficientNetB0 et visualisation Grad-CAM pour l'interprétabilité du modèle.",
+        "Ajout d'un système RAG (Retrieval-Augmented Generation) pour les questions-réponses sur la littérature médicale utilisant les données PubMed Central.",
+        "Déploiement du frontend avec Streamlit et du backend API séparément sur Heroku.",
+      ],
+    },
+    sourceCode: "https://github.com/vantien-nguyen/MedVision-XR",
+    technologies: [
+      { name: "Python", icon: "FaPython" },
+      { name: "TensorFlow", icon: "SiTensorflow" },
+      { name: "Keras", icon: "SiKeras" },
+      { name: "FastAPI", icon: "SiFastapi" },
+      { name: "Streamlit", icon: "SiStreamlit" },
+      { name: "Docker", icon: "SiDocker" },
+      { name: "Git", icon: "FaGit" },
+      { name: "Sentence Transformers", icon: "SiHuggingface" },
+    ]
   },
-  description: {
-    en: [
-      "AI-powered chest X-ray classification for COVID-19, Normal, Viral Pneumonia, and Lung Opacity.",
-      "Implemented transfer learning using EfficientNetB0 with Grad-CAM visualization for model interpretability.",
-      "Deployed frontend as a Streamlit app and backend API separately on Heroku.",
-    ],
-    fr: [
-      "Classification d'images radiographiques pulmonaires assistée par IA pour COVID-19, Normal, Pneumonie virale et Opacité pulmonaire.",
-      "Utilisation du transfert learning avec EfficientNetB0 et visualisation Grad-CAM pour l'interprétabilité du modèle.",
-      "Déploiement du frontend avec Streamlit et du backend API séparément sur Heroku.",
-    ],
-  },
-  sourceCode: "https://github.com/vantien-nguyen/MedVision-XR",
-  technologies: [
-    { name: "Python", icon: "FaPython" },
-    { name: "TensorFlow", icon: "SiTensorflow" },
-    { name: "Keras", icon: "SiKeras" },
-    { name: "FastAPI", icon: "SiFastapi" },
-    { name: "Streamlit", icon: "SiStreamlit" },
-    { name: "Docker", icon: "SiDocker" },
-    { name: "Git", icon: "FaGit" },
-    { name: "OpenCV", icon: "SiOpencv" }
-  ],
-  liveDemo: {
-    frontend: "https://medvision-frontend-09b9778a1861.herokuapp.com",
-    backend: "https://medvision-xr-backend-c69272f5f575.herokuapp.com/docs",
-  },
-},
   {
     title: {
       en: "Crosslink",
